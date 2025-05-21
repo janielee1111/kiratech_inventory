@@ -103,8 +103,12 @@ dependencies = [
     { name = "django-filter" },
     { name = "djangorestframework" },
     { name = "drf-yasg" },
-    { name = "pytest-django" },
     { name = "python-dotenv" },
+]
+
+[package.dev-dependencies]
+dev = [
+    { name = "pytest-django" },
 ]
 
 [package.metadata]
@@ -113,9 +117,11 @@ requires-dist = [
     { name = "django-filter", specifier = ">=25.1" },
     { name = "djangorestframework", specifier = ">=3.16.0" },
     { name = "drf-yasg", specifier = ">=1.21.10" },
-    { name = "pytest-django", specifier = ">=4.11.1" },
     { name = "python-dotenv", specifier = ">=1.1.0" },
 ]
+
+[package.metadata.requires-dev]
+dev = [{ name = "pytest-django", specifier = ">=4.11.1" }]
 
 [[package]]
 name = "packaging"

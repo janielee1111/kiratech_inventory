@@ -9,6 +9,10 @@ dependencies = [
     "django-filter>=25.1",
     "djangorestframework>=3.16.0",
     "drf-yasg>=1.21.10",
-    "pytest-django>=4.11.1",
     "python-dotenv>=1.1.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest-django>=4.11.1",
 ]
