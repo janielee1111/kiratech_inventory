@@ -7,7 +7,7 @@ from .models import Inventory
 class InventoryListView(TemplateView):
     template_name = "inventory/inventory_list.html"
 
-    def get(self, request, *args, **kwargs):
+    def get(self, request):
         context = {
             "title": "Inventory Dashboard",
             "description": "You are looking at the list of inventory in the system."
