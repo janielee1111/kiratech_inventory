@@ -6,6 +6,7 @@ Pull the image and run the container
 docker pull ghcr.io/janielee1111/kiratech_inventory:latest
 docker run -p 8000:8000 ghcr.io/janielee1111/kiratech_inventory:latest
 ```
+Then, access the application at http://127.0.0.1:8000
 
 ## Method 2: Without Docker
 __Prerequisites__
@@ -31,5 +32,4 @@ Do the old fashion way by activating the virtual environment and run the project
 .venv\Scripts\activate
 python manage.py runserver
 ```
-
-
+Then, access the application at http://127.0.0.1:8000
