@@ -41,12 +41,12 @@
             }
           })
           .then(response => {
-            const users = response.data;
+            const inventory_data = response.data;
 
             callback({
-              data: users,
-              recordsTotal: users.length,
-              recordsFiltered: users.length
+              data: inventory_data,
+              recordsTotal: inventory_data.length,
+              recordsFiltered: inventory_data.length
             });
           })
           .catch(error => {
