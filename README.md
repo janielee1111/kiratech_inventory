@@ -1,4 +1,4 @@
-# Kiratech Simple Inventory Management
+# Simple Inventory Management
 
 ## Method 1: With Docker
 Pull the image and run the container
