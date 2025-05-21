@@ -33,3 +33,8 @@ Do the old fashion way by activating the virtual environment and run the project
 python manage.py runserver
 ```
 Then, access the application at http://127.0.0.1:8000
+
+## Access the Admin
+username: admin
+
+password: Zxcv@1234
