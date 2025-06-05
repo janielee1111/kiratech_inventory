@@ -26,3 +26,11 @@ dev = [
 dev = [
     "pytest-django>=4.11.1",
 ]
+
+[tool.isort]
+profile = "django"  
+skip = ["migrations", ".venv", "env", "static"]  
+skip_glob = ["**/manage.py"] 
+known_django = ["django"]
+sections = ["FUTURE", "STDLIB", "DJANGO", "THIRDPARTY", "FIRSTPARTY", "LOCALFOLDER"]
+import_heading_django = "Django Imports"

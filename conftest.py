@@ -1,4 +1,5 @@
 import pytest
+
 from inventory.models import Inventory, Supplier
 
 

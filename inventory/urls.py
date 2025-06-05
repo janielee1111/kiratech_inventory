@@ -1,5 +1,7 @@
+# Django Imports
 from django.urls import path
-from .views import InventoryListView, InventoryDetailView
+
+from .views import InventoryDetailView, InventoryListView
 
 urlpatterns = [
     path("", InventoryListView.as_view(), name="inventory_list_view"),

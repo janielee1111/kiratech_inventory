@@ -1,6 +1,8 @@
-from django.shortcuts import render
-from django.views.generic import TemplateView, DetailView
+# Django Imports
 from django.http import HttpResponse
+from django.shortcuts import render
+from django.views.generic import DetailView, TemplateView
+
 from .models import Inventory
 
 
