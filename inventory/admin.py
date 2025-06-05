@@ -8,5 +8,5 @@ class InventoryAdmin(admin.ModelAdmin):
 
 
 @admin.register(Supplier)
-class InventoryAdmin(admin.ModelAdmin):
+class SupplierAdmin(admin.ModelAdmin):
     pass
