@@ -38,3 +38,10 @@ Then, access the application at http://127.0.0.1:8000
 username: admin
 
 password: Zxcv@1234
+
+## Run the Test
+At the root directory, run
+```
+pytest
+```
+It will detect all test files and run the test functions. 
