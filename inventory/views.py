@@ -10,7 +10,7 @@ class InventoryListView(TemplateView):
     def get(self, request):
         context = {
             "title": "Inventory Dashboard",
-            "description": "You are looking at the list of inventory in the system."
+            "description": "You are looking at the list of inventory in the system.",
         }
         return render(request, self.template_name, context)
 
@@ -19,4 +19,3 @@ class InventoryDetailView(DetailView):
     model = Inventory
     context_object_name = "inventory"
     template_name = "inventory/inventory_detail.html"
-

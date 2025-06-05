@@ -7,8 +7,10 @@ from conftest import create_inventory
 
 @pytest.mark.django_db
 def test_inventory_api(create_inventory):
-    create_inventory(name="Item A", description="Item A description", note="note", availability=True)
-    url = reverse('inventory-list')
+    create_inventory(
+        name="Item A", description="Item A description", note="note", availability=True
+    )
+    url = reverse("inventory-list")
     response = APIClient().get(path=url)
 
     assert response.status_code == status.HTTP_200_OK

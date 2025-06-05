@@ -7,7 +7,7 @@ class InventorySerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Inventory
-        fields = ['id', 'name', 'supplier_name', 'availability']
+        fields = ["id", "name", "supplier_name", "availability"]
 
     def get_supplier_name(self, obj):
         return obj.supplier.name

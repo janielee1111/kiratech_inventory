@@ -6,17 +6,17 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('inventory', '0002_inventory_created_datetime'),
+        ("inventory", "0002_inventory_created_datetime"),
     ]
 
     operations = [
         migrations.AlterModelOptions(
-            name='inventory',
-            options={'verbose_name': 'Inventory', 'verbose_name_plural': 'Inventory'},
+            name="inventory",
+            options={"verbose_name": "Inventory", "verbose_name_plural": "Inventory"},
         ),
         migrations.AlterField(
-            model_name='inventory',
-            name='stock',
+            model_name="inventory",
+            name="stock",
             field=models.IntegerField(default=0),
         ),
     ]

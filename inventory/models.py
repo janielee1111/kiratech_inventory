@@ -7,6 +7,7 @@ class Supplier(models.Model):
     def __str__(self):
         return self.name
 
+
 class Inventory(models.Model):
     name = models.CharField(max_length=120)
     description = models.CharField(max_length=255)
@@ -18,7 +19,7 @@ class Inventory(models.Model):
 
     def __str__(self):
         return self.name
-    
+
     class Meta:
         verbose_name = "Inventory"
         verbose_name_plural = "Inventory"

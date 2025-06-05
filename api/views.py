@@ -5,6 +5,6 @@ from inventory.models import Inventory
 
 
 class InventoryViewSet(viewsets.ModelViewSet):
-    queryset = Inventory.objects.all().order_by('-created_datetime')
+    queryset = Inventory.objects.all().order_by("-created_datetime")
     serializer_class = InventorySerializer
-    search_fields = ['name', 'supplier__name']
+    search_fields = ["name", "supplier__name"]

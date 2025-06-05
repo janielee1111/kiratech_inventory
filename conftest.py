@@ -8,4 +8,5 @@ def create_inventory():
         kwargs["supplier"] = Supplier.objects.create(name="supplier A")
 
         return Inventory.objects.create(**kwargs)
+
     return _create_inventory
